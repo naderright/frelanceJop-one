@@ -55,9 +55,9 @@ function Hero() {
                 <div className="WhatSetsUsApart:">
                     <h2 className='text-sky-600 font-bold text-[1.4rem]'>What Sets Us Apart:</h2>
                     <p className='text-[.9rem]  md:max-w-[18rem] font-medium '>What Sets Us Apart:</p>
-                    <p className='text-[.9rem]  md:max-w-[18rem] font-medium '>Our recruiters average over 15 years experience.</p>
-                    <p className='text-[.9rem]  md:max-w-[18rem] font-medium '>All of our staff works out of our Parsippany, NJ office.</p>
-                    <p className='text-[.9rem]  md:max-w-[18rem] font-medium '>We don't utilize overseas recruiters.</p>
+                    <p className='text-[.9rem]  md:max-w-[18rem] font-medium '>Engineering Expertise.</p>
+                    <p className='text-[.9rem]  md:max-w-[18rem] font-medium '>Experienced Recruiters.</p>
+                    <p className='text-[.9rem]  md:max-w-[18rem] font-medium '>Strategic Staffing Partnership</p>
                 </div>
                 <div className="OurEperties">
                     <h2 className='text-sky-600 font-bold text-[1.4rem]'>A Family Business:</h2>

@@ -121,7 +121,7 @@ export default function Navbar() {
           <div key={index} className="border-t border-gray-600">
             <button
               onClick={() => toggleSubnav(index)} // النقر لفتح/إغلاق القائمة الفرعية
-              className="block w-full text-left px-4 py-2 hover:bg-gray-600 focus:outline-none items-center justify-between"
+              className=" w-full text-left px-4 py-2 hover:bg-gray-600 focus:outline-none flex items-center justify-between"
             >
               <span>{menu.name}</span>
               {menu.submenu && ( // إضافة الأيقونة إذا كان هناك قائمة فرعية

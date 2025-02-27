@@ -4,7 +4,7 @@ import React from 'react'
 function ContentPara({data}) {
   return (
     <div className='flex  flex-col md:flex-row px-6 py-[4rem] gap-5'>
-    <div className="left  bg-gray-100 flex flex-col  justify-center px-4 md:w-[60rem]">
+    <div className="left  bg-gray-100 flex flex-col  justify-center p-4 md:w-[60rem]">
       <h3 className='text-2xl font-bold py-5'>{data?.leftContent?.title}</h3>
       {data?.leftContent?.note?<span className='font-bold pb-3'>Notes:</span>:''}
       <p className='tetx-[1rem] text-gray-600'>{data?.leftContent?.paragraf}</p>
