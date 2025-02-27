@@ -33,14 +33,14 @@ export const Menus = [
             { name: 'Our Expertise', link: '/our-expertise' },
             { name: 'Meet Our Team', link: '/meet-our-team' },
             { name: 'We are degreed engineers', link: '/meet-our-team' },
-           
+
         ],
     },
     {
         name: 'Contact',
         submenu: true,
         sublinks: [
-            { name: 'phone: 02 101089893', link: '/' },
+            { name: 'phone: 917-277-3611', link: '/' },
 
         ]
     },
@@ -111,10 +111,10 @@ export default function Footer() {
                 </div>
                 <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between md:text-left ">
                     <p className="text-gray-400 text-center">
-                    Copyright © 2025 Alis Construction Group - All Rights Reserved.
+                        Copyright © 2025 Alis Construction Group - All Rights Reserved.
                     </p>
                     <p className="text-gray-400 text-center">
-                    info@alisconstructiongroup.com
+                        info@alisconstructiongroup.com
                     </p>
                 </div>
             </div>
