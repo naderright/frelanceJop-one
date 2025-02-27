@@ -12,9 +12,14 @@ function Hero() {
             </div>
             <div className="aboutUs flex  mx-auto justify-between items-start flex-wrap text-white  mt-14  gap-3">
                 <div className="WhatWeDo">
-                    <h2 className='text-sky-600 font-bold text-[1.4rem]'>What We Do: </h2>
-                    <p className='text-[.9rem]  md:max-w-[18rem] font-medium '>Contract and permanent staffing and recruiting for engineering and engineering support, including:</p>
-                    <div className="enginer flex flex-col">
+                    <h2 className='text-sky-600 font-bold text-[1.4rem] gap-2'>What We Do: </h2>
+                    <p className='text-[.9rem]  md:max-w-[18rem] font-medium '>
+                        We specialize in contract and permanent staffing and recruitment for engineering and engineering support roles, including:</p>
+                    <div className="enginer flex flex-col gap-2">
+                        <span className='text-[.9rem]  md:max-w-[18rem] font-medium flex items-center '>
+                            <MoveRight size={'.9rem'} />
+                            Engineers
+                        </span>
                         <span className='text-[.9rem]  md:max-w-[18rem] font-medium flex items-center '>
                             <MoveRight size={'.9rem'} />
                             Designers / CAD Drafters
@@ -23,21 +28,29 @@ function Hero() {
                             <MoveRight size={'.9rem'} />
                             Technicians
                         </span>
+
                         <span className='text-[.9rem]  md:max-w-[18rem] font-medium flex items-center '>
                             <MoveRight size={'.9rem'} />
-                            Engineers
+                            Full List
                         </span>
-                        <span className='text-[.9rem]  md:max-w-[18rem] font-medium flex items-center '>
-                            <MoveRight size={'.9rem'} />
-                            Engineers
-                        </span>
+
                     </div>
                 </div>
-                <div className="OurEperties">
+                <div className="OurEperties flex flex-col gap-3">
                     <h2 className='text-sky-600 font-bold text-[1.4rem]'>Our Expertise:</h2>
-                    <p className='text-[.9rem]  md:max-w-[18rem] font-medium '>Concentrated in New Jersey, NYC metro, Philly metro, and Southern CT.</p>
-                    <p className='text-[.9rem]  md:max-w-[18rem] font-medium '>Specialized in local candidates.</p>
-                    <p className='text-[.9rem]  md:max-w-[18rem] font-medium '>Over 30 years industry experience.</p>
+                    <p className='text-[.9rem]  md:max-w-[18rem] font-medium '>
+                        We operate across the U.S., partnering with consultants, government agencies, and engineering firms to deliver top-tier talent. Our approach goes beyond traditional recruiting—we collaborate with industry experts to conduct in-depth qualification interviews, ensuring every hire is the right fit for the role.
+
+                    </p>
+                    <p className='text-[.9rem]  md:max-w-[18rem] font-medium '>
+                        Nationwide Reach – Serving clients across the U.S. with a strong presence in key markets.
+                    </p>
+                    <p className='text-[.9rem]  md:max-w-[18rem] font-medium '>
+                    Deep Industry Expertise – Our partnerships with engineering firms and government agencies help us vet candidates with precision.
+                    </p>
+                    <p className='text-[.9rem]  md:max-w-[18rem] font-medium '>
+                    Experienced Team – Our recruiters have extensive experience in the engineering sector, enabling us to match candidates effectively.
+                    </p>
                 </div>
                 <div className="WhatSetsUsApart:">
                     <h2 className='text-sky-600 font-bold text-[1.4rem]'>What Sets Us Apart:</h2>

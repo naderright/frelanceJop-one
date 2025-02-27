@@ -4,28 +4,35 @@ import React from 'react'
 const empeloyer = {
     leftContent: {
         note: true,
-        title: 'All our account executives are degreed engineers.',
-        paragraf: 'There are many reasons we are recognized as the most professional and trusted engineering staffing firm in New Jersey. Here are just three that stand out:',
-        paragraf2:'Call us today and speak with our management or one of our recruiters.',
-        contact:'(973) 490-7000'
+        title: 'Why We’re New Jersey’s Most Trusted Engineering Staffing Firm',
+        paragraf: 'At Engineering Resource Group (ERG), we take pride in delivering top-tier engineering staffing solutions. Here’s what sets us apart:',
+        paragraf2:'Call us today to speak with our management or one of our experienced recruiters: ',
+        contact:'(917) 277 3611'
     },
 
     rightContent: [
         {
-            one: 'All of our account executives are degreed engineers',
-            tow: ' and at least five years of engineering industry experience. This ensures the highest level of competence and professionalism in the staffing industry, delivering the best possible service to both our clients and our candidates.'
-
-
-        },
-        {
-            one: 'We work as a team',
-            tow: ' Unlike our competitors, our team setup means that we are more concerned with placing you in the right job than being placed with a particular recruiter. You may end up working with three different recruiters on three different job openings.'
+            one: 'Engineering Expertise',
+arr:[
+  '\u2713 All of our account executives are degreed engineers with at least five years of industry experience',
+  '\u2713 This ensures the highest level of technical understanding, leading to better job placements for both candidates and clients.'
+]
 
         },
         {
-            one: 'Average more than 15 years experience',
-            tow: 'Our account executives / recruiters average more than 15 years of experience with us. This means you’ll be working with a knowledgeable industry professional, not someone who’s just being trained.'
+            one: 'A Team-Oriented Approach',
+arr:[
+  '\u2713 Unlike many staffing firms, we work as a team—not as individual recruiters competing for placements.',
+  '\u2713 You may work with multiple recruiters to ensure you find the right job, not just any job.',
 
+]
+        },
+        {
+            one: 'Decades of Industry Experience',
+arr:[
+  '\u2713 Our recruiters average over 15 years of experience with us.',
+  '\u2713 You’ll work with seasoned professionals who truly understand the engineering job market—not someone who’s still in training.',
+]
         },
 
     ]

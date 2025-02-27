@@ -25,7 +25,8 @@ function ContentNumber({ data }) {
           <div className=" flex flex-col">
             <h3 className={`text-sky-700 font-bold py-3 ${typeOfGrid?'md:max-w-[18rem]':''}`}>{content.one}</h3>
            <div className="div flex flex-col">
-           {content.tow ? <p className={`${typeOfGrid?'md:max-w-[18rem]':''} text-gray-600`}>{content.tow}</p> : content.arr.map((line, index) => <p key={index}
+           {content.tow ? <p className={`${typeOfGrid?'md:max-w-[18rem]':''} text-gray-600`}>{content.tow}</p> :""}
+           { content.arr?.map((line, index) => <p key={index}
               className='text-gray-600 py-2'>{line}
             </p>)}
            </div>

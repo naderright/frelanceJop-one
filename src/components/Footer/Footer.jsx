@@ -1,5 +1,8 @@
 'use client';
 import { useState } from 'react';
+import logo from '../../../public/logo.jpg'
+import Image from 'next/image';
+
 
 export const Menus = [
     {
@@ -22,7 +25,7 @@ export const Menus = [
             { name: 'Counteroffers', link: '/' },
         ],
     },
-  
+
     {
         name: 'About Us',
         submenu: true,
@@ -38,7 +41,7 @@ export const Menus = [
         submenu: true,
         sublinks: [
             { name: 'phone: 02 101089893', link: '/' },
-            
+
         ]
     },
 ];
@@ -57,7 +60,11 @@ export default function Footer() {
 
     return (
         <footer className="bg-primary text-white py-8">
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-4 flex flex-col  ">
+                <div className="logo py-[2rem] ">
+                    <Image src={logo} width={100} height={100} alt='alts constration group' className='w-auto h-auto rounded-sm' />
+
+                </div>
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     {Menus.map((menu, index) => (
                         <div key={index} className="mb-6">

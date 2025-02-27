@@ -1,7 +1,9 @@
 'use client';
 import { Menus } from '@/data/navLinks';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import logo from '../../../public/logo.jpg'
 
 
 export default function Navbar() {
@@ -21,7 +23,12 @@ export default function Navbar() {
     <nav className="bg-primary text-white fixed top-0 w-full z-50">
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* الشعار */}
-        <div className="text-xl font-bold">Logo </div>
+        <div className="text-xl font-bold">
+          <Link href={'/'}>
+            <Image src={logo} width={120} height={120} alt='alts constration group' className='w-auto h-auto rounded-sm' />
+
+          </Link>
+        </div>
 
         {/* قائمة الناف بار (للكمبيوتر) */}
         <div className="hidden md:flex space-x-6">
@@ -31,13 +38,12 @@ export default function Navbar() {
                 onClick={() => toggleSubnav(index)} // النقر لفتح/إغلاق القائمة الفرعية
                 className="hover:text-gray-400 focus:outline-none flex items-center"
               >
-                {menu.link?<Link href={menu.link}>{menu.name}</Link>:menu.name}
+                {menu.link ? <Link href={menu.link}>{menu.name}</Link> : menu.name}
                 {menu.submenu && ( // إضافة الأيقونة إذا كان هناك قائمة فرعية
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className={`h-4 w-4 ml-2 transition-transform duration-200 ${
-                      openSubnav === index ? 'transform rotate-180' : ''
-                    }`}
+                    className={`h-4 w-4 ml-2 transition-transform duration-200 ${openSubnav === index ? 'transform rotate-180' : ''
+                      }`}
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -121,9 +127,8 @@ export default function Navbar() {
               {menu.submenu && ( // إضافة الأيقونة إذا كان هناك قائمة فرعية
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className={`h-4 w-4 transition-transform duration-200 ${
-                    openSubnav === index ? 'transform rotate-180' : ''
-                  }`}
+                  className={`h-4 w-4 transition-transform duration-200 ${openSubnav === index ? 'transform rotate-180' : ''
+                    }`}
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"

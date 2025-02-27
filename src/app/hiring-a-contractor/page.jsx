@@ -6,28 +6,28 @@ const empeloyer = {
     leftContent: {
         note: false,
         title: 'Consider Hiring On A Contract / Temporary Basis',
-        paragraf: 'If you are short staffed, but need to complete a project, consider hiring an engineer, designer/drafter or engineering technician on a contract basis.'
+        paragraf: 'If you are short staffed, but need to complete a project, consider hiring an engineer, designer/drafter or engineering technician on a contract basis.',
+        contact:'(917) 277 3611'
     },
 
     rightContent: [
         {
-            one: 'Advantages of contract / temporary staffing:',
+            one: 'Advantages of Contract/Temporary Staffing:',
             tow: [
-                '\u2713 You may be able to hire from your project’s budget, even if your company has a hiring freeze.',
-                '\u2713 You are not bound to a real contract. The contractor works as “employee at will” so there is no penalty of any kind if your project or need ends earlier than expected.',
-                '\u2713 Because you control the entire hiring process, the turnaround is very fast.',
-                '\u2713 When the hiring freeze is eventually lifted and you are happy with the contractor, you can convert him or her to a direct employee under very reasonable terms.',
+                '\u2713 Flexible Budgeting: Even if your company has a hiring freeze, you may still be able to hire using your project’s budget.',
+                '\u2713 No Long-Term Commitment: Contractors work as employees at will, meaning there’s no penalty if your project ends earlier than expected.',
+                '\u2713 Fast Hiring Process: Since you control the hiring decision, you can bring talent on board quickly.',
+                '\u2713 Seamless Transition to Full-Time: Once the hiring freeze is lifted, you can convert the contractor to a direct employee under fair and reasonable terms.',
             ]
 
         },
         {
-            one: 'Why choose Engineering Resource Group?',
+            one: 'Why Choose Engineering Resource Group?',
             tow: [
-                '\u2713 We have specialized in contract engineering staffing since 1991.',
-                '\u2713 We are recognized as the most professional and trusted engineering staffing company in New Jersey.',
-                '\u2713 All of our account executives and recruiters are degreed engineers, which means you will be dealing with professionals who understand your needs.',
-                '\u2713 We have a full one-week guarantee on contract employees which minimizes your risk.',
-                '\u2713 We have the most generous contract employee benefits in the industry, ensuring that our contractor will not leave before your project is completed.',
+                "\u2713 Specialized Expertise: We've focused on contract engineering staffing since 1991.",
+                '\u2713 Engineering Professionals: All of our account executives and recruiters are degreed engineers, ensuring a deep understanding of your technical needs.',
+                '\u2713 Risk-Free Hiring: Our one-week guarantee on contract employees minimizes your risk.',
+                '\u2713Industry-Leading Benefits: We offer the best contract employee benefits, ensuring stability so your contractor stays until your project is complete.',
                 
             ]
 

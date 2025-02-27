@@ -4,19 +4,25 @@ import React from 'react'
 const empeloyer = {
     leftContent: {
         note: true,
-        title: 'Terms on Permanent and Temp-to-Perm Placements',
-        paragraf: 'To the right are our standard terms. Terms specified in a customized staffing agreement with your company, if any, would supersede the above standard terms'
+        title: 'Terms for Permanent and Temp-to-Perm Placements',
+        paragraf: 'The terms below represent our standard policies. If your company has a customized staffing agreement with us, those terms will take precedence.'
     },
 
     rightContent: [
         {
-            one: 'Recruitment Fees on Permanent Placements',
-            tow: 'Our recruitment fee is 25% of the starting annual salary (excluding bonuses), payable net 30 after the employee’s starting date.'
+            one: 'Recruitment Fees for Permanent Placements',
+            tow:`Our recruitment fee is 20% of the employee’s starting annual salary (excluding bonuses).
+Payment is due within 30 days of the employee’s start date.
+`
 
         },
         {
-            one: 'Fee Structure on Temporary-to-Permanent Conversion',
-            tow: 'There is no fee if the employee has worked for 12 months or more for you as our contractor. Before 12 months, our conversion fee is 25% of the starting annual salary, less a pro-rated credit for the time already worked as a contractor. For example, if the employee worked as a contractor for 6 months and is then converted to a permanent hire, the fee is ½ of 25% (or 12 ½%) of the starting annual salary.'
+            one: 'Fee Structure for Temp-to-Perm Conversions',
+            tow:`No conversion fee if the employee has worked as our contractor for 12 months or more before transitioning to a permanent role.
+If the transition occurs before 12 months, a conversion fee applies:
+20% of the starting annual salary, minus a pro-rated credit for the time worked as a contractor.
+Example: If the employee has worked as a contractor for 6 months before conversion, the fee is 10% (half of 20%) of the starting annual salary.
+`
 
         },
        

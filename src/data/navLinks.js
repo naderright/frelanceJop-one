@@ -19,7 +19,7 @@ export const Menus = [
             { name: "what sets us apart", link: "/what-sets-us-apart" },
             { name: "Consider contract/temp employment", link: "/contract-temporary-employment" },
             { name: "Over the age of 60?", link: "/over-60" },
-            { name: "Counteroffers", link: "/" },
+            { name: "Counteroffers", link: "/counteroffers" },
         ],
     },
     {
@@ -46,7 +46,7 @@ export const Menus = [
     },
     {
         name: 'Contact',
-        link:'/contact-us',
+        link:'/',
         submenu: false
     }
 ];

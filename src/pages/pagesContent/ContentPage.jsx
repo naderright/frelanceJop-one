@@ -15,6 +15,7 @@ function ContentPage({data}) {
         <div className=" flex flex-col">
           <h3 className='text-sky-700 font-bold py-3 '>{content.one}</h3>
            <p className=' text-gray-600'>{content.tow}</p> 
+           {content.three?<p className=' text-gray-600 pt-2'>{content.tow}</p>:''}
         </div>
       </div>
       )}

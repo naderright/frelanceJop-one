@@ -1,3 +1,4 @@
+import { Phone } from 'lucide-react'
 import React from 'react'
 
 function ContentPara({data}) {
@@ -8,6 +9,8 @@ function ContentPara({data}) {
       {data.leftContent.note?<span className='font-bold pb-3'>Notes:</span>:''}
       <p className='tetx-[1rem] text-gray-600'>{data.leftContent.paragraf}</p>
       <p className='tetx-[1rem] text-gray-600'>{data.leftContent.paragraf2}</p>
+      {data.leftContent.contact?<p className='tetx-[1rem] text-gray-600 flex gap-2 pt-4'><Phone/> Call Us: {data.leftContent.contact}</p>:''}
+{data.leftContent.arr?.map((line,index)=><p key={index} className='text-sky-600 pt-3 text-[1rem]'>- {line} </p>)}
 
     </div>
     <div className='flex flex-col'>

@@ -5,43 +5,57 @@ import React from 'react'
 const empeloyer = {
     leftContent: {
         note: false,
-        title: 'Engineering Resource Group has specialized in staffing and recruiting for engineering and engineering support professions.',
+        title: 'Your Trusted Partner in Engineering Staffing & Recruiting',
+        paragraf:'Since 1991, Engineering Resource Group (ERG) has specialized in staffing and recruiting for engineering and engineering support professions across various employment types:',
+        arr:[
+            'Contract/Temporary Positions',
+            'Contract-to-Direct Placements',
+            'Direct/Permanent Positions',
+            'Full List of Professions',
+            'Local Expertise, Personalized Service'
+        ]
     },
 
     rightContent: [
         {
-            one: 'Our staffing and recruiting strength.',
+            one: 'Our staffing expertise is concentrated in:',
             tow: [
-                'Our staffing and recruiting strength is concentrated in New Jersey, New York City metro area including Fairfield County, CT and the Philadelphia metro area.',
-                'We specialize in providing local candidates, which includes candidates who are planning to move to this area, but not out-of-state candidates who want to work remotely, etc.',
-                'All of our recruiting is done locally out of our Parsippany, NJ office. Unlike some competitors, we do not employ overseas recruiters or sourcers. We would never entrust something as important as your career to an overseas recruiter who has no clue about our local industry.',
+                'New Jersey',
+            'New York City Metro Area (including Fairfield County, CT)',
+            'Philadelphia Metro Area',
+            'We prioritize local candidates and those planning to relocate to the area — not out-of-state applicants seeking remote work.',
+            'All recruiting is conducted in-house from our Parsippany, NJ office — never outsourced overseas — ensuring you work with professionals who truly understand the local job market and engineering industry.',
 
             ]
 
         },
         {
-            one: 'What sets us apart from our competitors?',
+            one: 'What Sets Us Apart?',
             tow: [
-                '\u2713 All of our account executives have at least 4-year engineering degrees and at least five years of engineering industry experience. This ensures the highest level of competence and professionalism in the staffing industry, delivering the best possible service to both our clients and our candidates.',
-                '\u2713 Our recruiters average over 15 years experience with us. This means you’ll be working with a knowledgeable industry professional, not someone who’s just being trained.',
-                '\u2713 We provide one of the best benefit packages for our contract employees, including contributing up to 75% of the cost of health insurance, paid holidays, paid time off (PTO) and a 401(k) plan.',
+                '\u2713 Engineering Expertise',
+                'All account executives hold 4-year engineering degrees and have at least 5 years of industry experience, delivering a level of competence unmatched in the staffing industry.',
+                '\u2713 Experienced Recruiters',
+                'Our recruiters average over 15 years of experience with ERG, providing you with consistent, knowledgeable guidance.',
+
+                '\u2713 Comprehensive Benefits Package',
+                'We offer one of the most generous benefits packages for contract employees, including:',
+                'Up to 75% contribution toward health insurance premiums',
+                'Paid holidays',
+                'Paid Time Off (PTO)',
+                '401(k) plan with company match',
+                '\u2713 Family-Owned & Operated',
+                'As a family business since 1991, we are committed to building long-term relationships with both clients and job seekers.',
+                'A Legacy of Success',
+                "We've placed hundreds of engineers who advanced to become managers and returning clients. Many of our placements from 10 or even 20 years ago continue to trust us when they're ready for their next career move.",
+                'Our Core Values:',
+                'Kindness',
+                'Honesty',
+                'Experience',
+                'Let us help you take the next step in your career!'
             ]
 
         },
-        {
-            one: 'We are family owned and operated since 1991.',
-            tow: [
-                'This means that we strive to build strong and long-term relationships with both our clients and job seekers.',
-                '\u2713 We have placed hundreds of engineers who later became managers and then became our clients.',
-                '\u2713 We have placed engineers and engineering support personnel, sometimes 10 or 20 years ago, who contact us again when they need to change companies.',
-                `\u2713 Our account executives, recruiters and our support staff all operate under our three core values:
-                 1- Kindness
-                 2- Honesty
-                 3- Experience`,
-                
-            ]
-
-        },
+      
       
        
 

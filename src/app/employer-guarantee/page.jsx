@@ -4,24 +4,29 @@ import React from 'react'
 const empeloyer = {
     leftContent: {
         note: true,
-        title: 'Six Month Guarantee on Permanent Placements',
-        paragraf: 'Applies only to non-exempt professions, such as drafters, technicians and electronic assemblers. Does NOT apply to exempt professions, such as engineers, which take longer than a week to establish competency. Details spelled out in staffing agreement.'
+        title: 'Six-Month Guarantee on Permanent Placements',
+        paragraf: `Applies only to non-exempt positions, such as drafters, technicians, and electronic assemblers.
+Does not apply to exempt positions, such as engineers, as these roles require more than a week to assess competency. Full details are outlined in the staffing agreement.
+The guarantee does not cover employees sourced directly by the client company.`
+
     },
 
     rightContent: [
         {
-            one: 'Initial 90 Day Guarantee',
-            tow: 'If the employee departs due to either poor performance or of their own volition during the first 90 days, we will try to find a replacement within 60 days. If a replacement that is acceptable to the client is not found within 60 days, the initial placement fee will be refunded in full.'
+            one: 'Initial 90-Day Guarantee',
+            tow: 'If an employee leaves within the first 90 days due to poor performance or voluntary resignation, we will work to find a replacement within 60 days.',
+            three:'If a suitable replacement is not found within 60 days, the full placement fee will be refunded.'
 
         },
         {
-            one: 'Additional 90 Day Guarantee',
-            tow: 'If the employee leaves of their own volition from 91st day to 180th day, we will try to find a replacement within 60 days. If a replacement that is acceptable to the client is not found within 60 days, the initial placement fee will be refunded in full.'
+            one: 'Additional 90-Day Guarantee',
+            tow:'If an employee voluntarily leaves between days 91 and 180, we will again attempt to find a replacement within 60 days.',
+            three:'If a suitable replacement is not found within 60 days, the full placement fee will be refunded.'
 
         },
         {
-            one: 'One Week Guarantee on Contract Jobs (for non-exempt professions)',
-            tow: 'One (1) week guarantee policy on our non-exempt contract employees: If you terminate our contract employee during the first week (up to 40 hours) of work due to poor performance, we will not bill you for those hours of work.'
+            one: 'One-Week Guarantee on Contract Placements (Non-Exempt Roles)',
+            tow: 'If a non-exempt contract employee is terminated within the first week (up to 40 hours) due to poor performance, you will not be billed for their hours worked.'
 
         },
 
@@ -33,7 +38,7 @@ function page() {
     return (
         <div className='py-[6rem]'>
             <TiltleSection tiltle={'Employer Guarantee'} />
-            <ContentPage data={empeloyer}/>
+            <ContentPage data={empeloyer} />
         </div>
     )
 }

@@ -2,36 +2,55 @@ import TiltleSection from '@/components/TitleSection'
 import ContentPara from '@/pages/pagesParagraf/ContentPara'
 import React from 'react'
 const empeloyer = {
-    leftContent: {
-        note: false,
-        title: 'Contract/ temporary employment has always been an important part of the engineering industry. Normally, companies hire contract engineers, designer/ drafters and technicians on as-needed project basis. However, companies also hire contractors when they have long-term project needs but don’t have the budget to hire permanent employees.',
-        paragraf: ''
+  leftContent: {
+    note: false,
+    paragraf: `The Value of Contract/Temporary Employment in Engineering :-
+Contract and temporary employment has long played a vital role in the engineering industry. While companies often hire contract engineers, designers/drafters, and technicians on a project-by-project basis, they also turn to contract staffing for long-term projects when permanent hiring isn't feasible due to budget constraints.
+`
+  },
+
+  rightContent: [
+    {
+      one: 'Advantages of Contract/Temporary Jobs:',
+      tow: [
+        `\u2713 Job Duration & Stability : -
+The average contract position with us lasts about 10 months, with many extending several years or transitioning into permanent roles.
+`,
+        `\u2713 Higher Pay : -
+Contract positions typically offer 20–30% higher pay compared to similar direct/permanent roles.
+`,
+        `\u2713 Faster Hiring Process : -
+Unlike permanent jobs that can take weeks to finalize, contract job offers are made quickly, allowing you to start working sooner.
+`,
+        `\u2713 No Long-Term Commitment
+There’s no formal contract to sign—contract roles are “employment at will,” just like traditional jobs.
+`,
+        `\u2713 Competitive Benefits : -
+
+You’ll be paid on a regular W-2 basis and receive benefits comparable to permanent positions, including:
+**Paid Time Off (PTO) & holiday pay
+**401(k) retirement plan
+**Company contributions toward health insurance
+**Full compliance with “employer of record” legal requirements, including:
+**Unemployment insurance
+**Short-term disability insurance
+**Workers’ compensation insurance
+`
+      ]
+
     },
 
-    rightContent: [
-        {
-            one: 'Advantages of contract / temporary jobs:',
-            tow: [
-                '\u2713 The average contract position with us is about 10 months; however, many contract jobs go on for several years or convert into permanent positions.',
-                '\u2713 Contract positions pay, on the average, 20 to 30% higher than comparable direct/ permanent positions.',
-                '\u2713 The decision-making process is usually quick – not the several-week process that can be the case with direct/ permanent jobs.',
-                '\u2713 There is no actual “contract” to sign. It is “employment at will” as with any ordinary job. You would be paid on regular W-2 basis, along with many of the benefits of a traditional direct position, such as',
-                '\u2713 Your benefits would also include all the “employer of record” legal requirements, such as unemployment insurance, short term disability insurance and workers compensation insurance.'
-            ]
 
-        },
-        
-    
-       
 
-    ]
+
+  ]
 }
 
 function page() {
   return (
-    <div>
-      <TiltleSection tiltle={'Consider Contract / Temporary Employment'}/>
-      <ContentPara data={empeloyer}/>
+    <div className='pt-[6rem]'>
+      <TiltleSection tiltle='Consider Contract / Temporary Employment' />
+      <ContentPara data={empeloyer} />
     </div>
   )
 }
