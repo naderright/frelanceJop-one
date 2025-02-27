@@ -4,7 +4,8 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 
 const geistSans = Open_Sans({
-  
+  subsets: ['latin'], // يمكنك تغييرها إلى `latin-ext` أو أي خيار آخر من القائمة
+  preload: true ,
   weight:["300","400","500","600","700","800"]
 });
 
