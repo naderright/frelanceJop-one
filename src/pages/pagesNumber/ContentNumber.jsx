@@ -2,15 +2,15 @@ import React from 'react'
 import { Phone } from 'lucide-react';
 
 function ContentNumber({ data }) {
-  const typeOfGrid = data.rightContent.length > 3
+  const typeOfGrid = data?.rightContent?.length > 3
   return (
     <div className='flex  flex-col md:flex-row px-6 py-[4rem] gap-9'>
 
       <div className="left  bg-gray-100 flex flex-col items-start gap-3 justify-center px-4 ">
-        <h3 className='text-2xl font-bold py-5'>{data.leftContent.title}</h3>
-        <p className='tetx-[1rem] text-gray-600'>{data.leftContent.paragraf}</p>
-        {data.leftContent.paragraf2?<p className='tetx-[1rem] font-bold text-gray-800 pt-3'>{data.leftContent.paragraf2}</p>:''}
-        {data.leftContent.contact?<p className='tetx-[1rem] text-gray-600 flex gap-2'><Phone/>{data.leftContent.contact}</p>:''}
+        <h3 className='text-2xl font-bold py-5'>{data?.leftContent?.title}</h3>
+        <p className='tetx-[1rem] text-gray-600'>{data?.leftContent?.paragraf}</p>
+        {data?.leftContent?.paragraf2?<p className='tetx-[1rem] font-bold text-gray-800 pt-3'>{data?.leftContent?.paragraf2}</p>:''}
+        {data?.leftContent?.contact?<p className='tetx-[1rem] text-gray-600 flex gap-2'><Phone/>{data?.leftContent?.contact}</p>:''}
         
       </div>
 
