@@ -62,7 +62,7 @@ export default function Footer() {
         <footer className="bg-primary text-white py-8">
             <div className="container mx-auto px-4 flex flex-col  ">
                 <div className="logo py-[2rem] ">
-                    <Image src={logo} width={100} height={100} alt='alts constration group' className='w-auto h-auto rounded-sm' />
+                    <Image src={logo}  alt='alts constration group' className='w-[10rem] h-auto rounded-sm' />
 
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
