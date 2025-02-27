@@ -33,7 +33,7 @@ const empeloyer = {
 
 function page() {
   return (
-    <div className='py-[6rem]'>
+    <div className='py-[2rem]'>
       <TiltleSection tiltle='Over 60?'/>
       <ContentPara data={empeloyer}/>
     </div>

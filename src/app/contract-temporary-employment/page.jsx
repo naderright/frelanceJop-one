@@ -48,7 +48,7 @@ You’ll be paid on a regular W-2 basis and receive benefits comparable to perma
 
 function page() {
   return (
-    <div className='pt-[6rem]'>
+    <div className='pt-[2rem]'>
       <TiltleSection tiltle='Consider Contract / Temporary Employment' />
       <ContentPara data={empeloyer} />
     </div>

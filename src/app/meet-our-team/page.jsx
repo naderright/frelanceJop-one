@@ -40,7 +40,7 @@ arr:[
 
 function page() {
   return (
-    <div className='py-[6rem]'>
+    <div className='py-[2rem]'>
       <TiltleSection tiltle='Meet Our Team'/>
       <ContentNumber data={empeloyer}/>
     </div>

@@ -20,12 +20,12 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-primary text-white fixed top-0 w-full z-50">
+    <nav className="bg-primary text-white sticky top-0 w-full z-50">
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* الشعار */}
         <div className="text-xl font-bold">
           <Link href={'/'}>
-            <Image src={logo} width={140} height={140} alt='alts constration group' className='w-auto h-auto rounded-sm' />
+            <Image src={logo} width={130} height={130} alt='alts constration group' className='w-auto h-auto rounded-sm' />
 
           </Link>
         </div>

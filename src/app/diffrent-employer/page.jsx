@@ -43,7 +43,7 @@ const empeloyer = {
 
 function page() {
   return (
-    <div className='pt-[6rem]'>
+    <div className='pt-[2rem]'>
       <TiltleSection tiltle={'what sets us apart ?'}/>
       <ContentNumber data={empeloyer}/>
     </div>

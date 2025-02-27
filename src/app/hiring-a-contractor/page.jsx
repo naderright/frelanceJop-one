@@ -39,7 +39,7 @@ const empeloyer = {
 
 function page() {
   return (
-    <div className='py-[6rem]'>
+    <div className='py-[2rem]'>
       <TiltleSection tiltle={'Consider Hiring on a Temp Basis'}/>
       <ContentPara data={empeloyer}/>
     </div>

@@ -3,7 +3,7 @@ import React from 'react'
 
 function page() {
     return (
-        <div className='py-[6rem] px-[2rem] '>
+        <div className='py-[2rem] px-[2rem] '>
             <TiltleSection tiltle='Were You Offered A Counteroffer?' />
             <div className="content mt-5 bg-gray-100 px-[5rem] py-6 flex flex-col gap-9" >
                 <p className=' text-gray-600 text-[1rem] md:text-[1.3rem]'>

@@ -109,7 +109,7 @@ function page() {
         setType(name)
     }
     return (
-        <div className='py-[6rem]'>
+        <div className='py-[2rem]'>
             <TiltleSection tiltle='benefits' />
             <div className="chodees max-w-[30rem] gap-4 mx-auto flex  py-3 mt-3 bg-sky-100 justify-center items-center">
                 <h3 onClick={() => changType('PTO & Holiday Pay')} className={`font-bold ${type == 'PTO & Holiday Pay' ? 'text-blue-600' : ''} hover:text-blue-600 transition-all cursor-pointer`}>PTO & Holiday Pay</h3>
