@@ -46,7 +46,7 @@ export const Menus = [
     },
     {
         name: 'Contact',
-        link:'/',
+        link:'/contact-us',
         submenu: false
     }
 ];
