@@ -111,10 +111,10 @@ export default function Footer() {
                 </div>
                 <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between md:text-left ">
                     <p className="text-gray-400 text-center">
-                        nadercs2018@gmail.com &copy; {new Date().getFullYear()}
+                    Copyright © 2025 Alis Construction Group - All Rights Reserved.
                     </p>
                     <p className="text-gray-400 text-center">
-                        Developed by Nader
+                    info@alisconstructiongroup.com
                     </p>
                 </div>
             </div>
