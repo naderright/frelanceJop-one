@@ -3,6 +3,7 @@ export const Menus = [
         name: "Employers",
         submenu: true,
         sublinks: [
+            {name:'Submit a rtaffing or recruiting request',link:'/staffing-request'},
             { name: "What sets us apart", link: "/diffrent-employer" },
             { name: "Guarantees", link: "/employer-guarantee" },
             { name: "Staffing Fees And Terms", link: "/staffing-fees-and-terms" },
