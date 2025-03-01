@@ -80,7 +80,7 @@ function Hero() {
                 </div>
             </div>
 
-            <p className='text-[1rem] md:text-[1.6rem] container px-4 text-center max-w-[50rem] text-white w-full mx-auto font-thin'>
+            <p className='text-[1rem] md:text-[2.5rem] container px-9 text-center max-w-[70rem] text-white w-full mx-auto font-thin'>
                 We provide engineering and engineering support staffing for both
                 <span className='text-sky-500'> contract / temporary and direct / permanent</span> jobs.
             </p>
