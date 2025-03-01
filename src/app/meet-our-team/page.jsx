@@ -5,7 +5,6 @@ const empeloyer = {
     leftContent: {
         note: true,
         title: 'Why We’re New Jersey’s Most Trusted Engineering Staffing Firm',
-        paragraf: 'At Engineering Resource Group (ERG), we take pride in delivering top-tier engineering staffing solutions. Here’s what sets us apart:',
         paragraf2:'Call us today to speak with our management or one of our experienced recruiters: ',
         contact:'(917) 277 3611'
     },
@@ -40,7 +39,7 @@ arr:[
 
 function page() {
   return (
-    <div className='py-[2rem]'>
+    <div className='pb-[2rem]'>
       <TiltleSection tiltle='Meet Our Team'/>
       <ContentNumber data={empeloyer}/>
     </div>

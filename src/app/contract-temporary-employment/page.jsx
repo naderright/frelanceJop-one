@@ -25,17 +25,15 @@ Unlike permanent jobs that can take weeks to finalize, contract job offers are m
         `\u2713 No Long-Term Commitment
 There’s no formal contract to sign—contract roles are “employment at will,” just like traditional jobs.
 `,
-        `\u2713 Competitive Benefits : -
+        `\u2713 You’ll be paid on a regular W-2 basis and receive benefits comparable to permanent positions, including:`,
+'- Paid Time Off (PTO) & holiday pay',
+'- 401(k) retirement plan',
+'- Company contributions toward health insurance',
+'Full compliance with “employer of record” legal requirements, including:',
+'- Unemployment insurance',
+'- Short-term disability insurance',
+'- Workers’ compensation insurance'
 
-You’ll be paid on a regular W-2 basis and receive benefits comparable to permanent positions, including:
-**Paid Time Off (PTO) & holiday pay
-**401(k) retirement plan
-**Company contributions toward health insurance
-**Full compliance with “employer of record” legal requirements, including:
-**Unemployment insurance
-**Short-term disability insurance
-**Workers’ compensation insurance
-`
       ]
 
     },
@@ -48,7 +46,7 @@ You’ll be paid on a regular W-2 basis and receive benefits comparable to perma
 
 function page() {
   return (
-    <div className='pt-[2rem]'>
+    <div className='pb-[2rem]'>
       <TiltleSection tiltle='Consider Contract / Temporary Employment' />
       <ContentPara data={empeloyer} />
     </div>

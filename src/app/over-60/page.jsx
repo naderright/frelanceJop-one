@@ -19,6 +19,9 @@ const empeloyer = {
                 '\u2713 The decision-making process is usually quick – not the several-week process that can be the case with direct / permanent jobs.',
                 '\u2713 There is no actual “contract” to sign. It is “employment at will” as with any ordinary job.',
                 '\u2713 You would be paid on regular W-2 along with many of the benefits of a traditional direct position, such as',
+                '- PTO and holiday pay',
+                '- 401k plan',
+                '- Company contribution on health insurance (if not covered under Medicare)',
                 '\u2713 Your benefits would also include all the “employer of record” legal requirements, such as unemployment insurance, short term disability insurance and workers compensation insurance.',
                
             ]
@@ -33,7 +36,7 @@ const empeloyer = {
 
 function page() {
   return (
-    <div className='py-[2rem]'>
+    <div className='pb-[2rem]'>
       <TiltleSection tiltle='Over 60?'/>
       <ContentPara data={empeloyer}/>
     </div>

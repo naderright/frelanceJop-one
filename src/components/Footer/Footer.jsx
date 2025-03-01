@@ -2,6 +2,9 @@
 import { useState } from 'react';
 import logo from '../../../public/logo.jpg'
 import Image from 'next/image';
+import Link from 'next/link';
+import { Mail, Phone } from 'lucide-react'
+
 
 
 export const Menus = [
@@ -9,10 +12,9 @@ export const Menus = [
         name: 'Emplpyers',
         submenu: true,
         sublinks: [
-            { name: "what sets us apart", link: "/diffrent-employer" },
-            { name: "Guarantees", link: "/employer-guarantee" },
-            { name: "Staffing Fees And Terms", link: "/staffing-fees-and-terms" },
-            { name: "consider hiring on a temp basis", link: "/hiring-a-contractor" },
+            { name: "Submit staffing request", link: "/staffing-request" },
+            { name: "What sets us apart?", link: "/different-employer" },
+            { name: "Guarantee", link: "/employer-guarantee" },
         ],
     },
     {
@@ -20,9 +22,8 @@ export const Menus = [
         submenu: true,
         sublinks: [
             { name: "what sets us apart", link: "/what-sets-us-apart" },
-            { name: "Consider contract/temp employment", link: "/contract-temporary-employment" },
-            { name: "Over the age of 60?", link: "/over-60" },
-            { name: "Counteroffers", link: "/counteroffers" },
+            { name: "Benefits", link: "/benefits" },
+
         ],
     },
 
@@ -40,8 +41,8 @@ export const Menus = [
         name: 'Contact',
         submenu: true,
         sublinks: [
-            { name: 'phone: 917-277-3611', link: '/' },
-
+            {icon:'Phone', name: '(917)-277-3611', link: ' tel:9172773611' },
+            {icon:'Mail' ,name: 'info@alisconstructiongroup.com', link: 'mailto:info@alisconstructiongroup.com' }
         ]
     },
 ];
@@ -61,11 +62,12 @@ export default function Footer() {
     return (
         <footer className="bg-primary text-white py-8">
             <div className="container mx-auto px-4 flex flex-col  ">
-                <div className="logo py-[2rem] ">
-                    <Image src={logo}  alt='alts constration group' className='w-[10rem] h-auto rounded-sm' />
 
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 items-start md:grid-cols-5 gap-8">
+                    <div className="logo  ">
+                        <Image src={logo} alt='alts constration group' className='w-[10rem] h-auto rounded-sm' />
+
+                    </div>
                     {Menus.map((menu, index) => (
                         <div key={index} className="mb-6">
                             <button
@@ -96,13 +98,14 @@ export default function Footer() {
                                     className={`${openSubnav === index ? 'block' : 'hidden'} md:block mt-2`}
                                 >
                                     {menu.sublinks.map((sublink, subIndex) => (
-                                        <a
+                                        
+                                        <Link
                                             key={subIndex}
                                             href={sublink.link}
-                                            className="block text-gray-400 hover:text-white mt-2"
+                                            className=" text-gray-400 hover:text-white mt-2 flex items-center gap-2"
                                         >
-                                            {sublink.name}
-                                        </a>
+                                         {sublink.icon == 'Mail'? <Mail/> :sublink.icon == 'Phone' ? <Phone/>:''}   {sublink.name}
+                                        </Link>
                                     ))}
                                 </div>
                             )}

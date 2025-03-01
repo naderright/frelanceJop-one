@@ -36,7 +36,7 @@ The guarantee does not cover employees sourced directly by the client company.`
 
 function page() {
     return (
-        <div className='py-[2rem]'>
+        <div className='pb-[2rem]'>
             <TiltleSection tiltle={'Employer Guarantee'} />
             <ContentPage data={empeloyer} />
         </div>

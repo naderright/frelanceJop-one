@@ -5,7 +5,7 @@ import React from 'react'
 
 function page() {
     return (
-        <div className='py-[2rem]'>
+        <div className='pb-[2rem]'>
             <TiltleSection tiltle='Contact Us' />
             <div className="container flex flex-col gap-7 max-w-[44rem] mx-auto p-4 bg-gray-100 rounded-lg shadow-md text-center py-[3rem] my-[3rem]">
                 <p className="text-lg font-semibold"> Contact with Us</p>

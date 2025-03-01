@@ -3,10 +3,10 @@ export const Menus = [
         name: "Employers",
         submenu: true,
         sublinks: [
-            { name: "what sets us apart", link: "/diffrent-employer" },
+            { name: "What sets us apart", link: "/diffrent-employer" },
             { name: "Guarantees", link: "/employer-guarantee" },
             { name: "Staffing Fees And Terms", link: "/staffing-fees-and-terms" },
-            { name: "consider hiring on a temp basis", link: "/hiring-a-contractor" },
+            { name: "Wonsider hiring on a temp basis", link: "/hiring-a-contractor" },
         ],
 
 
@@ -16,7 +16,7 @@ export const Menus = [
         submenu: true,
         sublinks: [
 
-            { name: "what sets us apart", link: "/what-sets-us-apart" },
+            { name: "What sets us apart", link: "/what-sets-us-apart" },
             { name: "Consider contract/temp employment", link: "/contract-temporary-employment" },
             { name: "Over the age of 60?", link: "/over-60" },
             { name: "Counteroffers", link: "/counteroffers" },
@@ -35,7 +35,7 @@ export const Menus = [
 
     },
     {
-        name: "Aboute Us",
+        name: "About Us",
         submenu: true,
         sublinks: [
 

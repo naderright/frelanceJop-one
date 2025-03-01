@@ -32,7 +32,7 @@ Example: If the employee has worked as a contractor for 6 months before conversi
 
 function page() {
   return (
-    <div className='py-[2rem]'>
+    <div className='pb-[2rem]'>
       <TiltleSection tiltle={'Staffing Fees And Terms'}/>
       <ContentPage data={empeloyer}/>
     </div>

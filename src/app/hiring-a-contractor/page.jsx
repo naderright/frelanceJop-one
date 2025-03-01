@@ -24,7 +24,7 @@ const empeloyer = {
         {
             one: 'Why Choose Engineering Resource Group?',
             tow: [
-                "\u2713 Specialized Expertise: We've focused on contract engineering staffing since 1991.",
+                "\u2713 Specialized Expertise: We've focused on contract engineering staffing for over 20.",
                 '\u2713 Engineering Professionals: All of our account executives and recruiters are degreed engineers, ensuring a deep understanding of your technical needs.',
                 '\u2713 Risk-Free Hiring: Our one-week guarantee on contract employees minimizes your risk.',
                 '\u2713Industry-Leading Benefits: We offer the best contract employee benefits, ensuring stability so your contractor stays until your project is complete.',
@@ -39,7 +39,7 @@ const empeloyer = {
 
 function page() {
   return (
-    <div className='py-[2rem]'>
+    <div className='pb-[2rem]'>
       <TiltleSection tiltle={'Consider Hiring on a Temp Basis'}/>
       <ContentPara data={empeloyer}/>
     </div>

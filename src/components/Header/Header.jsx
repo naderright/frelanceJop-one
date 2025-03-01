@@ -25,7 +25,7 @@ export default function Navbar() {
         {/* الشعار */}
         <div className="text-xl font-bold">
           <Link href={'/'}>
-            <Image src={logo}  alt='alts constration group' className='w-[12rem] h-auto rounded-sm' />
+            <Image src={logo} alt='alts constration group' className='w-[12rem] h-auto rounded-sm' />
 
           </Link>
         </div>
@@ -60,13 +60,14 @@ export default function Navbar() {
               {menu.submenu && openSubnav === index && ( // عرض القائمة الفرعية إذا كانت مفتوحة
                 <div className="absolute bg-gray-700 mt-2 py-2 rounded-lg shadow-lg min-w-[200px]">
                   {menu.sublinks.map((sublink, subIndex) => (
-                    <a
+                    <Link
+                      onClick={() => setOpenSubnav(null)}
                       key={subIndex}
                       href={sublink.link}
                       className="block px-4 py-2 hover:bg-gray-600"
                     >
                       {sublink.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               )}
