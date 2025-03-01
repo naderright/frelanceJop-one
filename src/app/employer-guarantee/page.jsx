@@ -15,13 +15,13 @@ The guarantee does not cover employees sourced directly by the client company.`
         {
             one: 'Initial 90-Day Guarantee',
             tow: 'If an employee leaves within the first 90 days due to poor performance or voluntary resignation, we will work to find a replacement within 60 days.',
-            three:'If a suitable replacement is not found within 60 days, the full placement fee will be refunded.'
+            three: 'If a suitable replacement is not found within 60 days, the full placement fee will be refunded.'
 
         },
         {
             one: 'Additional 90-Day Guarantee',
-            tow:'If an employee voluntarily leaves between days 91 and 180, we will again attempt to find a replacement within 60 days.',
-            three:'If a suitable replacement is not found within 60 days, the full placement fee will be refunded.'
+            tow: 'If an employee voluntarily leaves between days 91 and 180, we will again attempt to find a replacement within 60 days.',
+            three: 'If a suitable replacement is not found within 60 days, the full placement fee will be refunded.'
 
         },
         {
@@ -37,8 +37,13 @@ The guarantee does not cover employees sourced directly by the client company.`
 function page() {
     return (
         <div className='pb-[2rem]'>
-            <TiltleSection tiltle={'Employer Guarantee'} />
-            <ContentPage data={empeloyer} />
+
+            <div className="bg-sky-600 bg-[radial-gradient(white_1px,transparent_1px)] bg-[size:20px_20px] min-h-screen ">
+                <TiltleSection tiltle={'Employer Guarantee'} />
+                <div className="bg-white clipPath">
+                    <ContentPage data={empeloyer} />
+                </div>
+            </div>
         </div>
     )
 }

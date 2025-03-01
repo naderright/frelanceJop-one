@@ -7,7 +7,7 @@ const empeloyer = {
         note: false,
         title: 'Consider Hiring On A Contract / Temporary Basis',
         paragraf: 'If you are short staffed, but need to complete a project, consider hiring an engineer, designer/drafter or engineering technician on a contract basis.',
-        contact:'(917) 277 3611'
+        contact: '(917) 277 3611'
     },
 
     rightContent: [
@@ -28,22 +28,28 @@ const empeloyer = {
                 '\u2713 Engineering Professionals: All of our account executives and recruiters are degreed engineers, ensuring a deep understanding of your technical needs.',
                 '\u2713 Risk-Free Hiring: Our one-week guarantee on contract employees minimizes your risk.',
                 '\u2713Industry-Leading Benefits: We offer the best contract employee benefits, ensuring stability so your contractor stays until your project is complete.',
-                
+
             ]
 
         },
-       
+
 
     ]
 }
 
 function page() {
-  return (
-    <div className='pb-[2rem]'>
-      <TiltleSection tiltle={'Consider Hiring on a Temp Basis'}/>
-      <ContentPara data={empeloyer}/>
-    </div>
-  )
+    return (
+        <div className='pb-[2rem]'>
+            
+
+            <div className="bg-sky-600 bg-[radial-gradient(white_1px,transparent_1px)] bg-[size:20px_20px] min-h-screen ">
+                <TiltleSection tiltle={'Consider Hiring on a Temp Basis'} />
+                <div className="bg-white clipPath">
+                    <ContentPara data={empeloyer} />
+                </div>
+            </div>
+        </div>
+    )
 }
 
 export default page
