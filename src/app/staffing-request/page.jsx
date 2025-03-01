@@ -8,7 +8,7 @@ function page() {
         <div>
             <div className="bg-sky-600 bg-[radial-gradient(white_1px,transparent_1px)] bg-[size:20px_20px] min-h-screen ">
                 <TiltleSection tiltle={'Submit a Staffing or Recruiting Request'} />
-                <div className="bg-white clipPath h-screen ">
+                <div className="bg-white clipPath  ">
                     {/* .///// */}
 
                     <div className='grid grid-cols-1 md:grid-cols-2 px-6 py-[4rem] gap-[5rem] container mx-auto h-full '>

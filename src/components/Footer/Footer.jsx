@@ -42,7 +42,7 @@ export const Menus = [
         submenu: true,
         sublinks: [
             {icon:'Phone', name: '(917)-277-3611', link: ' tel:9172773611' },
-            {icon:'Mail' ,name: 'info@alisconstructiongroup.com', link: 'mailto:info@alisconstructiongroup.com' }
+            {icon:'Mail' ,name: 'Email', link: 'mailto:info@alisconstructiongroup.com' }
         ]
     },
 ];
@@ -104,7 +104,7 @@ export default function Footer() {
                                             href={sublink.link}
                                             className=" text-gray-400 hover:text-white mt-2 flex items-center gap-2"
                                         >
-                                         {sublink.icon == 'Mail'? <Mail/> :sublink.icon == 'Phone' ? <Phone/>:''}   {sublink.name}
+                                         {sublink.icon == 'Phone' ? <Phone/>: sublink.icon == 'Mail'? <Mail/> :''}   {sublink.name}
                                         </Link>
                                     ))}
                                 </div>
