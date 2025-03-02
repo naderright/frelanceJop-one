@@ -21,7 +21,7 @@ function Hero() {
 
     return (
         <div className='hero relative py-11 mx-auto bgHero flex flex-col md:gap-16'>
-            <div className="textHero mt-[7rem]">
+            <div className="textHero mt-[4rem] mx-auto px-5">
                 <TextSwitcher />
             </div>
 
@@ -80,7 +80,7 @@ function Hero() {
                 </div>
             </div>
 
-            <p className='text-[1rem] md:text-[2.5rem] container px-9 text-center max-w-[70rem] text-white w-full mx-auto font-thin'>
+            <p className='text-[1rem] md:text-[2.6rem] container px-9 text-center max-w-[70rem] text-white w-full mx-auto font-thin'>
                 We provide engineering and engineering support staffing for both
                 <span className='text-sky-500'> contract / temporary and direct / permanent</span> jobs.
             </p>

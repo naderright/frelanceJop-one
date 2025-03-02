@@ -22,7 +22,7 @@ const Popup = ({ isOpen, onClose, data }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed bg-opacity-30 top-0 bottom-0 flex justify-center items-center  bg-gray-500 w-screen h-screen z-50">
+    <div className="fixed bg-opacity-30 top-0 bottom-0 flex justify-center items-center  bg-gray-500 w-screen z-50">
       <div className="popup px-[2rem] bg-white overflow-auto w-screen h-screen md:w-[80%] md:h-[80%]">
         <div className="close flex justify-end">
           <button className=" mt-5 mr-5 cursor-pointer font-bold " onClick={onClose}><X /></button>
