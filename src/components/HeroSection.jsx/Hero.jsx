@@ -21,7 +21,7 @@ function Hero() {
 
     return (
         <div className='hero relative py-11 mx-auto bgHero flex flex-col md:gap-16'>
-            <div className="textHero mt-[4rem] mx-auto px-5">
+            <div className="textHero mt-[4rem] mx-auto px-5 ">
                 <TextSwitcher />
             </div>
 

@@ -7,7 +7,7 @@ function ContentNumber({ data }) {
     <div className='grid grid-cols-1 md:grid-cols-3 px-6 py-[4rem] gap-9 h-full'>
 
       <div className="left  px-[2rem] mx-auto bg-gray-100 flex flex-col items-start gap-3 justify-start p-4 ">
-        <h3 className='text-2xl font-bold py-5'>{data?.leftContent?.title}</h3>
+        <h3 className='text-1xl lg:text-2xl font-bold py-5'>{data?.leftContent?.title}</h3>
         <p className='tetx-[1rem] text-gray-600'>{data?.leftContent?.paragraf}</p>
         {data?.leftContent?.paragraf2?<p className='tetx-[1rem] font-bold text-gray-800 pt-3'>{data?.leftContent?.paragraf2}</p>:''}
         {data?.leftContent?.contact?<p className='tetx-[1rem] text-gray-600 font-bold flex gap-2'><Phone/>{data?.leftContent?.contact}</p>:''}
