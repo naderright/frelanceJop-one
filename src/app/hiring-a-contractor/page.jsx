@@ -42,7 +42,7 @@ function page() {
         <div className='pb-[2rem]'>
             
 
-            <div className="bg-sky-600 bg-[radial-gradient(white_1px,transparent_1px)] bg-[size:20px_20px] min-h-screen ">
+            <div className="bgTitle ">
                 <TiltleSection tiltle={'Consider Hiring on a Temp Basis'} />
                 <div className="bg-white clipPath">
                     <ContentPara data={empeloyer} />

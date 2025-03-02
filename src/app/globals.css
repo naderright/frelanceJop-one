@@ -7,9 +7,15 @@
 
 
 @layer components {
+  .bgTitle{
+    background-image: url('https://img.freepik.com/free-vector/gradient-blue-dots-design-background_23-2149585929.jpg');
+    
+  }
   .bgHero {
+   
     background: rgb(105, 100, 100);
     background: linear-gradient(90deg, rgba(105, 100, 100, 0.8883928571428571) 0%, rgba(18, 24, 97, 1) 0%, rgba(9, 10, 42, 1) 38%, rgba(20, 29, 105, 1) 100%, rgba(157, 158, 230, 1) 100%, rgba(15, 18, 56, 1) 100%);
+  
   }
  .clipPath{
   clip-path: polygon(50% 0, 100% 5%, 100% 100%, 0 100%, 0 5%);

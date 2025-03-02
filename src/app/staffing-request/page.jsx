@@ -6,7 +6,7 @@ import React from 'react'
 function page() {
     return (
         <div>
-            <div className="bg-sky-600 bg-[radial-gradient(white_1px,transparent_1px)] bg-[size:20px_20px] min-h-screen ">
+            <div className="bgTitle ">
                 <TiltleSection tiltle={'Submit a Staffing or Recruiting Request'} />
                 <div className="bg-white clipPath  ">
                     {/* .///// */}

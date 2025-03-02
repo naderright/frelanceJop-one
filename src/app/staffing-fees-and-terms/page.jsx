@@ -33,7 +33,7 @@ Example: If the employee has worked as a contractor for 6 months before conversi
 function page() {
   return (
     <div className='pb-[2rem]'>
-      <div className="bg-sky-600 bg-[radial-gradient(white_1px,transparent_1px)] bg-[size:20px_20px] min-h-screen ">
+      <div className="bgTitle ">
         <TiltleSection tiltle={'Staffing Fees And Terms'} />
         <div className="bg-white clipPath">
           <ContentPage data={empeloyer} />
