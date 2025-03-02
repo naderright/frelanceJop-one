@@ -4,6 +4,7 @@ import logo from '../../../public/logo.jpg'
 import Image from 'next/image';
 import Link from 'next/link';
 import { Mail, Phone } from 'lucide-react'
+import ContinuousText from '../textSlideContainous';
 
 
 
@@ -41,8 +42,8 @@ export const Menus = [
         name: 'Contact',
         submenu: true,
         sublinks: [
-            {icon:'Phone', name: '(917)-277-3611', link: ' tel:9172773611' },
-            {icon:'Mail' ,name: 'Email', link: 'mailto:info@alisconstructiongroup.com' }
+            { icon: 'Phone', name: '(917)-277-3611', link: ' tel:9172773611' },
+            { icon: 'Mail', name: 'Email', link: 'mailto:info@alisconstructiongroup.com' }
         ]
     },
 ];
@@ -61,13 +62,17 @@ export default function Footer() {
 
     return (
         <footer className="bg-primary text-white py-8">
-            <div className="container mx-auto px-4 flex flex-col  ">
+            < ContinuousText />
+            <div className="container mx-auto pt-5 px-4 flex flex-col  ">
 
                 <div className="grid grid-cols-1 items-start md:grid-cols-5 gap-8">
                     <div className="logo  ">
-                        <Image src={logo} alt='alts constration group' className='w-[10rem] h-auto rounded-sm' />
-
+                        <Image src={logo} alt='alts constration group' className='w-[12rem] h-auto rounded-sm' />
+                        <div className="text text-[.8rem] text-gray-500 ">
+                            <p>30 years of experience as the most professional and trusted engineering staffing firm in New Jersey</p>
+                        </div>
                     </div>
+
                     {Menus.map((menu, index) => (
                         <div key={index} className="mb-6">
                             <button
@@ -98,13 +103,13 @@ export default function Footer() {
                                     className={`${openSubnav === index ? 'block' : 'hidden'} md:block mt-2`}
                                 >
                                     {menu.sublinks.map((sublink, subIndex) => (
-                                        
+
                                         <Link
                                             key={subIndex}
                                             href={sublink.link}
                                             className=" text-gray-400 hover:text-white mt-2 flex items-center gap-2"
                                         >
-                                         {sublink.icon == 'Phone' ? <Phone/>: sublink.icon == 'Mail'? <Mail/> :''}   {sublink.name}
+                                            {sublink.icon == 'Phone' ? <Phone /> : sublink.icon == 'Mail' ? <Mail /> : ''}   {sublink.name}
                                         </Link>
                                     ))}
                                 </div>
