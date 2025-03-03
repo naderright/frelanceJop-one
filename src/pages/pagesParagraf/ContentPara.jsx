@@ -16,7 +16,7 @@ function ContentPara({ data }) {
         </div>
 
       </div>
-      <div className=' col-span-2 flex flex-col'>
+      <div className=' col-span-2 flex flex-col max-w-[28rem] md:max-w-[44rem//]'>
         {/* {data.rightContent[1].one} */}
         {data?.rightContent?.map((content, index) => <div key={index} className='content '>
 

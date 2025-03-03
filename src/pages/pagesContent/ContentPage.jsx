@@ -11,7 +11,7 @@ function ContentPage({ data }) {
         </div>
 
       </div>
-      <div className='flex flex-col col-span-2  max-w['>
+      <div className='flex flex-col col-span-2 max-w-[28rem] md:max-w-[44rem]'>
         {/* {data.rightContent[1].one} */}
         {data?.rightContent?.map((content, index) => <div key={index} className='content '>
 
