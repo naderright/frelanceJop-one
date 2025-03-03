@@ -15,7 +15,7 @@ function ContentNumber({ data }) {
       </div>
 
 
-      <div className={`max-w-[28rem] md:max-w-[44rem] col-span-2 grid gap-3 ${typeOfGrid ? 'grid-cols-1 md:grid-cols-2 ' : 'grid-cols-1'}`}>
+      <div className={`max-w-[22rem] md:max-w-[44rem] col-span-2 grid gap-3 ${typeOfGrid ? 'grid-cols-1 md:grid-cols-2 ' : 'grid-cols-1'}`}>
         {/* {data.rightContent[1].one} */}
         {data?.rightContent?.map((content, index) => <div key={index} className='content '>
           <div className=" text-sky-600 flex items-center gap-6">
