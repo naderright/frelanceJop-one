@@ -27,7 +27,7 @@ const empeloyer = {
 
     },
     {
-      one: 'Our goal is to create long-term relationships with our candidates',
+      one: 'Recruitment Standards and Ethical Practices',
       arr: [
         '\u2713 We treat all of our candidates with personal and professional respect throughout the process.',
         '\u2713 All of our recruiters work in our Parsippany, NJ office. We do not employ (or utilize in any way) overseas recruiters/personnel.',
