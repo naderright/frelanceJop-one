@@ -29,10 +29,7 @@ There’s no formal contract to sign—contract roles are “employment at will,
 '- Paid Time Off (PTO) & holiday pay',
 '- 401(k) retirement plan',
 '- Company contributions toward health insurance',
-'Full compliance with “employer of record” legal requirements, including:',
-'- Unemployment insurance',
-'- Short-term disability insurance',
-'- Workers’ compensation insurance'
+
 
       ]
 
