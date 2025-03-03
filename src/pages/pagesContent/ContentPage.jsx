@@ -5,7 +5,7 @@ function ContentPage({ data }) {
     <div className='grid grid-cols-1 md:grid-cols-3 px-6   h-screen items-start pt-[4rem] justify-center gap-6'>
       <div className="left px-[2rem] mx-auto  bg-gray-100 flex flex-col   justify-start p-4 ">
         <h3 className='text-1xl lg:text-2xl font-bold py-5'>{data?.leftContent?.title}</h3>
-        <div className="note bg-blue-300 rounded-sm p-2">
+        <div className="note bg-blue-100 rounded-sm p-2">
           {data?.leftContent?.note ? <span className='font-bold py-3'>Note:</span> : ''}
           <p className='tetx-[1rem] text-gray-600'>{data?.leftContent?.paragraf}</p>
         </div>
