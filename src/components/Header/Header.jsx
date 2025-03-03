@@ -124,7 +124,7 @@ export default function Navbar() {
               onClick={() => toggleSubnav(index)} // النقر لفتح/إغلاق القائمة الفرعية
               className=" w-full text-left px-4 py-2 hover:bg-gray-600 focus:outline-none flex items-center justify-between"
             >
-              <span>{menu.name}</span>
+              {menu.sublinks?<span>{menu.name}</span>:<Link href={'/contact-us'}>{menu.name}</Link>}
               {menu.submenu && ( // إضافة الأيقونة إذا كان هناك قائمة فرعية
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -146,13 +146,14 @@ export default function Navbar() {
             {menu.submenu && openSubnav === index && ( // عرض القائمة الفرعية إذا كانت مفتوحة
               <div className="pl-4">
                 {menu.sublinks.map((sublink, subIndex) => (
-                  <a
+                  <Link
+                  
                     key={subIndex}
                     href={sublink.link}
                     className="block px-4 py-2 hover:bg-gray-600"
                   >
                     {sublink.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             )}
