@@ -10,6 +10,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openSubnav, setOpenSubnav] = useState(null); // حالة للتحكم في القوائم الفرعية
 
+  const closeSubmenue = ()=>{setOpenSubnav(null)}
   // دالة لفتح/إغلاق القائمة الفرعية
   const toggleSubnav = (index) => {
     if (openSubnav === index) {
@@ -61,7 +62,7 @@ export default function Navbar() {
                 <div className="absolute bg-gray-700 mt-2 py-2 rounded-lg shadow-lg min-w-[200px]">
                   {menu.sublinks.map((sublink, subIndex) => (
                     <Link
-                      onClick={() => setOpenSubnav(null)}
+                      onClick={closeSubmenue}
                       key={subIndex}
                       href={sublink.link}
                       className="block px-4 py-2 hover:bg-gray-600"
@@ -124,7 +125,7 @@ export default function Navbar() {
               onClick={() => toggleSubnav(index)} // النقر لفتح/إغلاق القائمة الفرعية
               className=" w-full text-left px-4 py-2 hover:bg-gray-600 focus:outline-none flex items-center justify-between"
             >
-              {menu.sublinks?<span>{menu.name}</span>:<Link href={'/contact-us'}>{menu.name}</Link>}
+              {menu.sublinks?<span>{menu.name}</span>:<Link onClick={closeSubmenue} href={'/contact-us'}>{menu.name}</Link>}
               {menu.submenu && ( // إضافة الأيقونة إذا كان هناك قائمة فرعية
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -147,7 +148,7 @@ export default function Navbar() {
               <div className="pl-4">
                 {menu.sublinks.map((sublink, subIndex) => (
                   <Link
-                  
+                  onClick={closeSubmenue}
                     key={subIndex}
                     href={sublink.link}
                     className="block px-4 py-2 hover:bg-gray-600"

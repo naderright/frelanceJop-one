@@ -23,7 +23,6 @@ const empeloyer = {
       arr: [
         '\u2713 We always try to offer career advice that will benefit our candidates for the long term.',
         '\u2713 We depend on referrals from our candidates – we would not be in business for long if it were not for positive referrals.',
-        '\u2713 Over the past 33 years we have placed over 5,700 candidates in engineering-related jobs. It is our goal that each and every person we place gives a positive referral about us to their colleagues.'
       ]
 
     },
