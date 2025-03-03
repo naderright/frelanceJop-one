@@ -6,7 +6,7 @@ const empeloyer = {
   leftContent: {
     note: false,
     title: 'Your Trusted Partner in Engineering Staffing & Recruiting',
-    paragraf: 'Since 1991, Engineering Resource Group (ERG) has specialized in staffing and recruiting for engineering and engineering support professions across various employment types:',
+    // paragraf: 'Since 1991, Engineering Resource Group (ERG) has specialized in staffing and recruiting for engineering and engineering support professions across various employment types:',
     arr: [
       'Contract/Temporary Positions',
       'Contract-to-Direct Placements',
