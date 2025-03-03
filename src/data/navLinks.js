@@ -7,7 +7,7 @@ export const Menus = [
             { name: "What sets us apart", link: "/diffrent-employer" },
             { name: "Guarantees", link: "/employer-guarantee" },
             { name: "Staffing Fees And Terms", link: "/staffing-fees-and-terms" },
-            { name: "Wonsider hiring on a temp basis", link: "/hiring-a-contractor" },
+            { name: "Consider hiring on a temp basis", link: "/hiring-a-contractor" },
         ],
 
 

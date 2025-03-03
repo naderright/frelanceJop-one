@@ -10,7 +10,7 @@ import ContinuousText from '../textSlideContainous';
 
 export const Menus = [
     {
-        name: 'Emplpyers',
+        name: 'Employers',
         submenu: true,
         sublinks: [
             { name: "Submit staffing request", link: "/staffing-request" },
@@ -22,7 +22,7 @@ export const Menus = [
         name: 'Job seekers',
         submenu: true,
         sublinks: [
-            { name: "what sets us apart", link: "/what-sets-us-apart" },
+            { name: "What sets us apart", link: "/what-sets-us-apart" },
             { name: "Benefits", link: "/benefits" },
 
         ],

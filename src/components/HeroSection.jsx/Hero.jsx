@@ -65,7 +65,7 @@ function Hero() {
                         Nationwide Reach – Serving clients across the U.S. with a strong presence in key markets.
                     </p>
                     <p className='text-[.9rem] md:max-w-[22rem] font-medium'>
-                        Deep Industry Expertise – Our partnerships with engineering firms and government agencies help us vet candidates with precision.
+                        Deep Industry Expertise – Our partnerships with engineering firms and government agencies help us get candidates with precision.
                     </p>
                     <p className='text-[.9rem] md:max-w-[22rem] font-medium'>
                         Experienced Team – Our recruiters have extensive experience in the engineering sector, enabling us to match candidates effectively.
