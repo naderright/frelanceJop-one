@@ -23,7 +23,7 @@ const empeloyer = {
         '- 401k plan',
         '- Company contribution on health insurance (if not covered under Medicare)',
         '- Company contributions toward health insurance',
-        'Full compliance with “employer of record” legal requirements, including:',
+        '\u2713 Full compliance with “employer of record” legal requirements, including:',
         '- Unemployment insurance',
         '- Short-term disability insurance',
         '- Workers’ compensation insurance',
