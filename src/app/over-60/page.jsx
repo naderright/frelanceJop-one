@@ -22,6 +22,11 @@ const empeloyer = {
         '- PTO and holiday pay',
         '- 401k plan',
         '- Company contribution on health insurance (if not covered under Medicare)',
+        '- Company contributions toward health insurance',
+        'Full compliance with “employer of record” legal requirements, including:',
+        '- Unemployment insurance',
+        '- Short-term disability insurance',
+        '- Workers’ compensation insurance',
         '\u2713 Your benefits would also include all the “employer of record” legal requirements, such as unemployment insurance, short term disability insurance and workers compensation insurance.',
 
       ]
