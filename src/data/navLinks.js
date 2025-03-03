@@ -3,7 +3,7 @@ export const Menus = [
         name: "Employers",
         submenu: true,
         sublinks: [
-            {name:'Submit a rtaffing or recruiting request',link:'/staffing-request'},
+            {name:'Submit a staffing or recruiting request',link:'/staffing-request'},
             { name: "What sets us apart", link: "/diffrent-employer" },
             { name: "Guarantees", link: "/employer-guarantee" },
             { name: "Staffing Fees And Terms", link: "/staffing-fees-and-terms" },
@@ -23,18 +23,18 @@ export const Menus = [
             // { name: "Counteroffers", link: "/counteroffers" },
         ],
     },
-    {
-        name: "Benfits",
-        submenu: true,
+    // {
+    //     name: "Benfits",
+    //     submenu: true,
 
-        sublinks: [
+    //     sublinks: [
 
-            { name: "PTO & Holiday Pay", link: "/benefits" },
-            { name: "Health & Dental Insurance", link: "/benefits" },
-            { name: "401(k) Plan", link: "/benefits" },
-        ],
+    //         { name: "PTO & Holiday Pay", link: "/benefits" },
+    //         { name: "Health & Dental Insurance", link: "/benefits" },
+    //         { name: "401(k) Plan", link: "/benefits" },
+    //     ],
 
-    },
+    // },
     {
         name: "About Us",
         submenu: true,

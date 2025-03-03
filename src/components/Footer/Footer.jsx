@@ -14,7 +14,7 @@ export const Menus = [
         submenu: true,
         sublinks: [
             { name: "Submit staffing request", link: "/staffing-request" },
-            { name: "What sets us apart?", link: "/different-employer" },
+            { name: "What sets us apart?", link: "/diffrent-employer" },
             { name: "Guarantee", link: "/employer-guarantee" },
         ],
     },
@@ -23,7 +23,7 @@ export const Menus = [
         submenu: true,
         sublinks: [
             { name: "What sets us apart", link: "/what-sets-us-apart" },
-            { name: "Benefits", link: "/benefits" },
+            // { name: "Benefits", link: "/benefits" },
 
         ],
     },

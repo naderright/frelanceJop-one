@@ -25,7 +25,7 @@ function Hero() {
                 <TextSwitcher />
             </div>
 
-            <div className="aboutUs flex gap-2 px-4 pb-4 container mx-auto justify-between items-start flex-wrap text-white mt-14">
+            <div className="aboutUs flex gap-3 md:gap-16 px-4 pb-4 container mx-auto justify-between md:justify-center items-start px-6 flex-wrap text-white mt-14">
                 <div className="WhatWeDo">
                     <h2 className='text-sky-600 font-bold text-[1.4rem] gap-2'>What We Do:</h2>
                     <p className='text-[.9rem] md:max-w-[22rem] font-medium'>
