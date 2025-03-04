@@ -34,7 +34,7 @@ const empeloyer = {
         '\u2713 Engineering Expertise',
         'All account executives hold 4-year engineering degrees and have at least 5 years of industry experience, delivering a level of competence unmatched in the staffing industry.',
         '\u2713 Experienced Recruiters',
-        '      Our recruiters average over 15 years of experience with ERG, providing you with consistent, knowledgeable guidance.',
+        '      Our recruiters average over 15 years of experience with ACG, providing you with consistent, knowledgeable guidance.',
 
         '\u2713 Comprehensive Benefits Package',
         '       We offer one of the most generous benefits packages for contract employees, including:',

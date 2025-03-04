@@ -7,7 +7,7 @@ export const Menus = [
             { name: "What sets us apart", link: "/diffrent-employer" },
             { name: "Guarantees", link: "/employer-guarantee" },
             { name: "Staffing Fees And Terms", link: "/staffing-fees-and-terms" },
-            { name: "Consider hiring on a temp basis", link: "/hiring-a-contractor" },
+            { name: "Consider Hiring On A Temp Basis", link: "/hiring-a-contractor" },
         ],
 
 
@@ -41,7 +41,7 @@ export const Menus = [
         sublinks: [
 
             { name: "Our Expertise", link: "/our-expertise" },
-            { name: "All our account executives are degreed engineerst", link: "/meet-our-team" },
+            { name: "All our account executives are degreed engineers", link: "/meet-our-team" },
            
         ],
     },

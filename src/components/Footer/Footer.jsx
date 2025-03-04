@@ -5,6 +5,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Mail, Phone } from 'lucide-react'
 import ContinuousText from '../textSlideContainous';
+import { FaLinkedin } from "react-icons/fa6";
+
 
 
 
@@ -43,7 +45,8 @@ export const Menus = [
         submenu: true,
         sublinks: [
             { icon: 'Phone', name: '(917)-277-3611', link: ' tel:9172773611' },
-            { icon: 'Mail', name: 'Email', link: 'mailto:info@alisconstructiongroup.com' }
+            { icon: 'Mail', name: 'Email', link: 'mailto:info@alisconstructiongroup.com' },
+            { icon: 'Linked In', name: 'Linked In', link: 'https://www.linkedin.com/company/101254311/' }
         ]
     },
 ];
@@ -69,7 +72,7 @@ export default function Footer() {
                     <div className="logo  ">
                         <Image src={logo} alt='alts constration group' className='w-[12rem] h-auto rounded-sm' />
                         <div className="text text-[.8rem] text-gray-500 ">
-                            <p>30 years of experience as the most professional and trusted engineering staffing firm in New Jersey</p>
+                            <p>30 years of experience as the most professional and trusted engineering staffing firm Operaitng federally</p>
                         </div>
                     </div>
 
@@ -109,7 +112,7 @@ export default function Footer() {
                                             href={sublink.link}
                                             className=" text-gray-400 hover:text-white mt-2 flex items-center gap-2"
                                         >
-                                            {sublink.icon == 'Phone' ? <Phone /> : sublink.icon == 'Mail' ? <Mail /> : ''}   {sublink.name}
+                                            {sublink.icon == 'Phone' ? <Phone /> : sublink.icon == 'Mail' ? <Mail /> :sublink.icon == 'Linked In'? <FaLinkedin className='text-[1.5rem]'/>:''}   {sublink.name}
                                         </Link>
                                     ))}
                                 </div>

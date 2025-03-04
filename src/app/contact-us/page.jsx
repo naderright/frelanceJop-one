@@ -1,5 +1,6 @@
 import TiltleSection from '@/components/TitleSection'
-import { Mail, Phone } from 'lucide-react'
+import { Mail, Phone } from 'lucide-react';
+import { FaLinkedin } from "react-icons/fa6";
 import Link from 'next/link'
 import React from 'react'
 
@@ -16,6 +17,10 @@ function page() {
                     <Mail/> <Link href="mailto:info@alisconstructiongroup.com" className="hover:underline">
                         info@alisconstructiongroup.com
                     </Link>
+                </p>
+                <p className="text-blue-600 flex justify-center items-center gap-2">
+                    <FaLinkedin/> <Link  href="https://www.linkedin.com/company/101254311/" 
+                    target='_blank' className="hover:underline">Linked In</Link>
                 </p>
             </div>
         </div>

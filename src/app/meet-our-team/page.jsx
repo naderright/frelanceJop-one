@@ -4,7 +4,7 @@ import React from 'react'
 const empeloyer = {
   leftContent: {
     note: true,
-    title: 'Why We’re New Jersey’s Most Trusted Engineering Staffing Firm',
+    title: 'Why We’re The Most Trusted Engineering Staffing Firm',
     paragraf2: 'Call us today to speak with our management or one of our experienced recruiters: ',
     contact: '(917) 277 3611'
   },
