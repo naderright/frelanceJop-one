@@ -72,7 +72,8 @@ export default function Footer() {
                     <div className="logo  ">
                         <Image src={logo} alt='alts constration group' className='w-[12rem] h-auto rounded-sm' />
                         <div className="text text-[.8rem] text-gray-500 ">
-                            <p>30 years of experience as the most professional and trusted engineering staffing firm Operaitng federally</p>
+                            <p>30 years of experience as the most professional and trusted engineering 
+                            staffing firm This federally</p>
                         </div>
                     </div>
 
