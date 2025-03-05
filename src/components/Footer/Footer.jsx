@@ -21,7 +21,7 @@ export const Menus = [
         ],
     },
     {
-        name: 'Job seekers',
+        name: 'Job Seekers',
         submenu: true,
         sublinks: [
             { name: "What Sets Us Apart", link: "/what-sets-us-apart" },

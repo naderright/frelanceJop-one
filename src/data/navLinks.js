@@ -13,7 +13,7 @@ export const Menus = [
 
     },
     {
-        name: "Job seekers",
+        name: "Job Seekers",
         submenu: true,
         sublinks: [
 
