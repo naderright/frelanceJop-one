@@ -15,8 +15,8 @@ export const Menus = [
         name: 'Employers',
         submenu: true,
         sublinks: [
-            { name: "Submit staffing request", link: "/staffing-request" },
-            { name: "What sets us apart?", link: "/diffrent-employer" },
+            { name: "Submit Staffing Request", link: "/staffing-request" },
+            { name: "What Sets Us Apart?", link: "/diffrent-employer" },
             { name: "Guarantee", link: "/employer-guarantee" },
         ],
     },
@@ -24,7 +24,7 @@ export const Menus = [
         name: 'Job seekers',
         submenu: true,
         sublinks: [
-            { name: "What sets us apart", link: "/what-sets-us-apart" },
+            { name: "What Sets Us Apart", link: "/what-sets-us-apart" },
             // { name: "Benefits", link: "/benefits" },
 
         ],
@@ -36,7 +36,7 @@ export const Menus = [
         sublinks: [
             { name: 'Our Expertise', link: '/our-expertise' },
             { name: 'Meet Our Team', link: '/meet-our-team' },
-            { name: 'We are degreed engineers', link: '/meet-our-team' },
+            { name: 'We Are Degreed Engineers', link: '/meet-our-team' },
 
         ],
     },

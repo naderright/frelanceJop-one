@@ -3,8 +3,8 @@ export const Menus = [
         name: "Employers",
         submenu: true,
         sublinks: [
-            {name:'Submit a staffing or recruiting request',link:'/staffing-request'},
-            { name: "What sets us apart", link: "/diffrent-employer" },
+            {name:'Submit A Staffing Or Recruiting Request',link:'/staffing-request'},
+            { name: "What Sets Us Apart", link: "/diffrent-employer" },
             { name: "Guarantees", link: "/employer-guarantee" },
             { name: "Staffing Fees And Terms", link: "/staffing-fees-and-terms" },
             { name: "Consider Hiring On A Temp Basis", link: "/hiring-a-contractor" },
@@ -17,9 +17,9 @@ export const Menus = [
         submenu: true,
         sublinks: [
 
-            { name: "What sets us apart", link: "/what-sets-us-apart" },
-            { name: "Consider contract/temp employment", link: "/contract-temporary-employment" },
-            { name: "Over the age of 60?", link: "/over-60" },
+            { name: "What Sets Us Apart", link: "/what-sets-us-apart" },
+            { name: "Consider Contract/Temp Employment", link: "/contract-temporary-employment" },
+            { name: "Over The Age Of 60?", link: "/over-60" },
             // { name: "Counteroffers", link: "/counteroffers" },
         ],
     },
@@ -41,7 +41,7 @@ export const Menus = [
         sublinks: [
 
             { name: "Our Expertise", link: "/our-expertise" },
-            { name: "All our account executives are degreed engineers", link: "/meet-our-team" },
+            { name: "All Our Account Executives Are Degreed Engineers", link: "/meet-our-team" },
            
         ],
     },
