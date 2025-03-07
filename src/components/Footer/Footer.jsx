@@ -46,7 +46,7 @@ export const Menus = [
         sublinks: [
             { icon: 'Phone', name: '(917)-277-3611', link: ' tel:9172773611' },
             { icon: 'Mail', name: 'Email', link: 'mailto:info@alisconstructiongroup.com' },
-            { icon: 'Linked In', name: 'Linked In', link: 'https://www.linkedin.com/company/101254311/' }
+            { icon: 'Linked In', name: 'LinkedIn', link: 'https://www.linkedin.com/company/101254311/' }
         ]
     },
 ];
@@ -73,7 +73,7 @@ export default function Footer() {
                         <Image src={logo} alt='alts constration group' className='w-[12rem] h-auto rounded-sm' />
                         <div className="text text-[.8rem] text-gray-500 ">
                             <p>30 years of experience as the most professional and trusted engineering 
-                            staffing firm This federally</p>
+                            staffing firm Operating federally</p>
                         </div>
                     </div>
 
