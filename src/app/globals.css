@@ -8,7 +8,7 @@
 
 @layer components {
   .bgTitle{
-    background-image: url('https://img.freepik.com/free-vector/gradient-blue-dots-design-background_23-2149585929.jpg');
+    background-image: url('../../public/bgTitle.avif');
     
   }
   .bgHero {
