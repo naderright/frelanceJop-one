@@ -12,7 +12,7 @@ const geistSans = Open_Sans({
 
 
 export const metadata = {
-  title: "Aus Constraction Group",
+  title: "Alis Construction Group",
   description: "We specialize in contract and permanent staffing and recruitment for engineering and engineering support roles",
   icons: './favicon.ico'
 };
