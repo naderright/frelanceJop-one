@@ -26,7 +26,7 @@ export default function Navbar() {
         {/* الشعار */}
         <div className="text-xl font-bold">
           <Link href={'/'}>
-            <Image src={logo} alt='alts constration group' className='w-[12rem] h-auto rounded-sm' />
+            <Image src={logo} alt='Alis Construction Group' className='w-[12rem] h-auto rounded-sm' />
 
           </Link>
         </div>

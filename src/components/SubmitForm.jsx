@@ -25,7 +25,7 @@ export default function JobApplicationForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const mailtoLink = `mailto:nadercs@gmail.com.com?subject=Job Application&body=${encodeURIComponent(
+        const mailtoLink = `mailto:info@alisconstructiongroup.com?subject=Job Application&body=${encodeURIComponent(
             `Full Name: ${formData.fullName}\nTitle: ${formData.title}\nCompany Name: ${formData.companyName}\nCompany Location: ${formData.companyLocation}\nPhone: ${formData.phone}\nEmail: ${formData.email}\nJob Title: ${formData.jobTitle}\nJob Duration: ${formData.jobDuration}\nRequirements: ${formData.requirements}`
         )}`;
         window.location.href = mailtoLink;

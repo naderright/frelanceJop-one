@@ -70,7 +70,7 @@ export default function Footer() {
 
                 <div className="grid grid-cols-1 items-start md:grid-cols-5 gap-8">
                     <div className="logo  ">
-                        <Image src={logo} alt='alts constration group' className='w-[12rem] h-auto rounded-sm' />
+                        <Image src={logo} alt='Alis Construction Group' className='w-[12rem] h-auto rounded-sm' />
                         <div className="text text-[.8rem] text-gray-500 ">
                             <p>30 years of experience as the most professional and trusted engineering 
                             staffing firm Operating federally</p>
