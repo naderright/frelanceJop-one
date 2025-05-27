@@ -4,7 +4,7 @@ import { Phone } from 'lucide-react';
 function ContentNumber({ data }) {
   const typeOfGrid = data?.rightContent?.length > 3
   return (
-    <div className='grid grid-cols-1 md:grid-cols-3 px-6 py-[4rem] gap-9 h-full'>
+    <div className='grid grid-cols-1 md:grid-cols-3 px-6 py-[4rem] gap-9 h-full container mx-auto'>
 
       <div className="left  px-[2rem] mx-auto bg-gray-100 flex flex-col items-start gap-3 justify-start p-4 ">
         <h3 className='text-1xl lg:text-2xl font-bold py-5'>{data?.leftContent?.title}</h3>

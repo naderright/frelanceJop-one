@@ -2,161 +2,161 @@
 import { Menus } from '@/data/navLinks';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
-import logo from '../../../public/logo.jpg'
-
+import { useEffect, useRef, useState } from 'react';
+import logo from '../../../public/logo.jpg';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [openSubnav, setOpenSubnav] = useState(null); // حالة للتحكم في القوائم الفرعية
+  const [openSubnav, setOpenSubnav] = useState(null);
+  const navRef = useRef(null);
 
-  const closeSubmenue = () => { setOpenSubnav(null) }
-  // دالة لفتح/إغلاق القائمة الفرعية
-  const toggleSubnav = (index) => {
-    if (openSubnav === index) {
-      setOpenSubnav(null); // إذا كانت القائمة مفتوحة، أغلقها
-    } else {
-      setOpenSubnav(index); // افتح القائمة الجديدة
-    }
+  // إغلاق القوائم الفرعية عند الضغط خارج النافبار
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setOpenSubnav(null);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const handleSubnavToggle = (index) => {
+    setOpenSubnav((prev) => (prev === index ? null : index));
+  };
+
+  const handleMobileClose = () => {
+    setIsMenuOpen(false);
+    setOpenSubnav(null);
   };
 
   return (
-    <nav className="bg-primary text-white sticky top-0 w-full z-50">
+    <nav className="bg-primary text-white sticky top-0 w-full z-50" ref={navRef}>
       <div className="container mx-auto flex justify-between items-center p-4">
-        {/* الشعار */}
+        {/* اللوجو */}
         <div className="text-xl font-bold">
-          <Link href={'/'}>
-            <Image src={logo} alt='Alis Construction Group' className='w-[12rem] h-auto rounded-sm' />
-
+          <Link href="/" onClick={() => setOpenSubnav(null)}>
+            <Image src={logo} alt="Alis Construction Group" className="w-[12rem] h-auto rounded-sm" />
           </Link>
         </div>
 
-        {/* قائمة الناف بار (للكمبيوتر) */}
+        {/* قائمة الديسكتوب */}
         <div className="hidden md:flex space-x-6">
           {Menus.map((menu, index) => (
             <div key={index} className="relative">
-              <button
-                onClick={() => toggleSubnav(index)} // النقر لفتح/إغلاق القائمة الفرعية
-                className="hover:text-gray-400 focus:outline-none flex items-center"
-              >
-                {menu.link ? <Link onClick={closeSubmenue} href={menu.link}>{menu.name}</Link> : menu.name}
-                {menu.submenu && ( // إضافة الأيقونة إذا كان هناك قائمة فرعية
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className={`h-4 w-4 ml-2 transition-transform duration-200 ${openSubnav === index ? 'transform rotate-180' : ''
-                      }`}
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
+              {menu.submenu ? (
+                <>
+                  {/* زر فتح القائمة الفرعية */}
+                  <button
+                    onClick={() => handleSubnavToggle(index)}
+                    className="hover:text-gray-400 focus:outline-none flex items-center"
+                    aria-expanded={openSubnav === index}
+                    aria-controls={`submenu-${index}`}
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
-                )}
-              </button>
-              {menu.submenu && openSubnav === index && ( // عرض القائمة الفرعية إذا كانت مفتوحة
-                <div className="absolute bg-gray-700 mt-2 py-2 rounded-lg shadow-lg min-w-[200px]">
-                  {menu.sublinks.map((sublink, subIndex) => (
-                    <Link
-                      onClick={closeSubmenue}
-                      key={subIndex}
-                      href={sublink.link}
-                      className="block px-4 py-2 hover:bg-gray-600"
+                    {menu.name}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className={`h-4 w-4 ml-2 transition-transform duration-200 ${openSubnav === index ? 'rotate-180' : ''}`}
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
                     >
-                      {sublink.name}
-                    </Link>
-                  ))}
-                </div>
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+
+                  {/* القائمة الفرعية */}
+                  {openSubnav === index && (
+                    <div
+                      id={`submenu-${index}`}
+                      role="menu"
+                      className="absolute bg-gray-700 mt-2 py-2 rounded-lg shadow-lg min-w-[200px]"
+                    >
+                      {menu.sublinks.map((sublink, subIndex) => (
+                        <Link
+                          key={subIndex}
+                          href={sublink.link}
+                          className="block px-4 py-2 hover:bg-gray-600"
+                          onClick={() => setOpenSubnav(null)}
+                        >
+                          {sublink.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </>
+              ) : (
+                // رابط مباشر لو ما فيه submenu
+                <Link href={menu.link} className="hover:text-gray-400" onClick={() => setOpenSubnav(null)}>
+                  {menu.name}
+                </Link>
               )}
             </div>
           ))}
         </div>
 
-        {/* زر القائمة (للجوال) */}
-        <button
-          className="md:hidden"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
+        {/* زر الموبايل */}
+        <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
           {isMenuOpen ? (
-            // أيقونة الإغلاق (X)
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
+            // أيقونة الإغلاق
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
           ) : (
-            // أيقونة القائمة (Hamburger)
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16m-7 6h7"
-              />
+            // أيقونة الهامبرغر
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
             </svg>
           )}
         </button>
       </div>
 
-      {/* قائمة الناف بار (للجوال) */}
+      {/* قائمة الموبايل */}
       <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden bg-gray-700`}>
         {Menus.map((menu, index) => (
           <div key={index} className="border-t border-gray-600">
-            <button
-              onClick={() => toggleSubnav(index)} // النقر لفتح/إغلاق القائمة الفرعية
-              className=" w-full text-left px-4 py-2 hover:bg-gray-600 focus:outline-none flex items-center justify-between"
-            >
-              {menu.sublinks ? <span>{menu.name}</span> : <Link onClick={() => setIsMenuOpen(!isMenuOpen)} href={'/contact-us'}>{menu.name}</Link>}
-              {menu.submenu && ( // إضافة الأيقونة إذا كان هناك قائمة فرعية
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className={`h-4 w-4 transition-transform duration-200 ${openSubnav === index ? 'transform rotate-180' : ''
-                    }`}
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+            {menu.submenu ? (
+              <>
+                {/* زر فتح القائمة الفرعية في الموبايل */}
+                <button
+                  onClick={() => handleSubnavToggle(index)}
+                  className="w-full text-left px-4 py-2 hover:bg-gray-600 focus:outline-none flex items-center justify-between"
+                  aria-expanded={openSubnav === index}
+                  aria-controls={`mobile-submenu-${index}`}
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              )}
-            </button>
-            {menu.submenu && openSubnav === index && ( // عرض القائمة الفرعية إذا كانت مفتوحة
-              <div className="pl-4">
-                {menu.sublinks.map((sublink, subIndex) => (
-                  <Link
-                    onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    key={subIndex}
-                    href={sublink.link}
-                    className="block px-4 py-2 hover:bg-gray-600"
+                  {menu.name}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className={`h-4 w-4 transition-transform duration-200 ${openSubnav === index ? 'rotate-180' : ''}`}
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
                   >
-                    {sublink.name}
-                  </Link>
-                ))}
-              </div>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+
+                {/* القائمة الفرعية للموبايل */}
+                {openSubnav === index && (
+                  <div id={`mobile-submenu-${index}`} className="pl-4">
+                    {menu.sublinks.map((sublink, subIndex) => (
+                      <Link
+                        key={subIndex}
+                        href={sublink.link}
+                        className="block px-4 py-2 hover:bg-gray-600"
+                        onClick={handleMobileClose}
+                      >
+                        {sublink.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </>
+            ) : (
+              // رابط مباشر في الموبايل
+              <Link href={menu.link || '#'} className="block px-4 py-2 hover:bg-gray-600" onClick={handleMobileClose}>
+                {menu.name}
+              </Link>
             )}
           </div>
         ))}
